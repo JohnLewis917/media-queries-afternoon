@@ -1,27 +1,17 @@
 * {
-    box-sizing: border-box
-}
-.container {
-    display: flex;
-    justify-content: center;
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    height: 1000px;
-    width: 1660px;
-    margin: auto;
-    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
-    
+    box-sizing: border-box  
 }
 img {
-    object-fit: contain;
+    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+    background-size: cover;
 }
 .page-top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: black;
     color: white;
+    flex-direction: row;
     
 } 
 .top-left-text {
@@ -39,6 +29,8 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* padding-bottom: 100px; */
+    
 }
 .links {
     display: flex;
@@ -55,10 +47,6 @@ img {
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    
-    
-    
-    
 }
 .centered-2 {
     display: flex;
