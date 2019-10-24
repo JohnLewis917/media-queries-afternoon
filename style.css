@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box
+}
+.container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    width: 1660px;
+    margin: auto;
+    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+    
+}
+img {
+    object-fit: contain;
+}
+.page-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+} 
+.top-left-text {
+    display: flex;
+    justify-content: center;
+    font-size: .8rem;
+    font-family: "Kaushan Script";
+    font-style: italic;
+    color: yellow;
+    /* padding-left: 100px; */
+    align-items: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.links {
+    display: flex;
+    /* margin-left: 400px; */
+    margin-right: 400px;
+    top: 20px;
+    font-size: 1.3rem;
+    align-content: center;
+    margin-right: 100px;
+
+}
+
+.centered-1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    
+    
+    
+    
+}
+.centered-2 {
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-size: 6rem;
+    
+}
+.button {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    background-color: #fed136;
+    color: white;
+    border-radius: 8px;
+    font-size: 24px;
+}
+ @media(max-width: 990px) {
+    .links {
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    .container {
+        flex-wrap: wrap
+    }
+
+}
+
+
