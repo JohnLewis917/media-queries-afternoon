@@ -1,80 +1,143 @@
 * {
-    box-sizing: border-box  
+  box-sizing: border-box;
 }
-img {
-    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
-    background-size: cover;
+body {
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 .page-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: black;
-    color: white;
-    flex-direction: row;
-    
-} 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
 .top-left-text {
-    display: flex;
-    justify-content: center;
-    font-size: .8rem;
-    font-family: "Kaushan Script";
-    font-style: italic;
-    color: yellow;
-    /* padding-left: 100px; */
-    align-items: center;
+  color: yellow;
+  margin-left: 100px;
+  margin-top: 10px;
 }
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* padding-bottom: 100px; */
-    
+.text-1 {
+    font-size: 1.5rem;
 }
-.links {
-    display: flex;
-    /* margin-left: 400px; */
-    margin-right: 400px;
-    top: 20px;
-    font-size: 1.3rem;
-    align-content: center;
-    margin-right: 100px;
-
-}
-
 .centered-1 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 .centered-2 {
-    display: flex;
-    justify-content: center;
-    font-family: serif;
-    font-size: 6rem;
-    
+    font-size: 3rem;
+}
+.links {
+  margin-right: 200px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 200px;
+  margin-bottom: 500px;
 }
 .button {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    width: 300px;
-    background-color: #fed136;
-    color: white;
-    border-radius: 8px;
-    font-size: 24px;
+  background-color: wheat;
+  font-size: 12px;
+  border-radius: 4px;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
 }
- @media(max-width: 990px) {
-    .links {
-        display: none;
-    }
-}
-@media(max-width: 400px){
-    .container {
-        flex-wrap: wrap
-    }
-
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.footer {
+  margin-bottom: 400px;
+}
+@media only screen and (max-width: 375px) {
+ 
+ .box {
+     align-content: center;
+     margin-left: 1px;
+ }
+ .page-top{
+     display: block;
+     margin-left: -35px;
+ }
+ 
+ .image {
+     width: 100%;
+     height: auto;
+ }
+ .text-1 {
+     font-size: 1rem;
+     
+ }
+ .centered-1 {
+     font-size: 1rem;
+ }
+ .centered-2{
+     font-size: 1.3rem;
+ }
+ .top-left-text {
+     margin-left: 160px;
+ }
+  
+}
+@media only screen and (max-width: 414px) {
+.image {
+    width: 100%;
+    height: auto;
+ }
+.centered-2{
+    font-size: 1.9rem;
+ }
+ .page-top{
+    display: block;
+    margin-right: -200px;
+ }
+ .top-left-text {
+    margin-left: 130px;
+ }
+}
+@media only screen and (max-width: 770px) {
+    .image {
+        width: 100%;
+        height: auto;
+     }
+     
+    .centered-2{
+        font-size: 3rem;
+     }
+     .page-top{
+        margin-right: -130px;
+     }
+     .top-left-text {
+        margin-left: 90px;
+        font-size: 2rem;
+     }
+}
